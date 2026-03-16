@@ -23,7 +23,7 @@ jobs:
     - name: Run tests
       run: |
         pytest
-build-docker:
+  build-docker:
     needs: test 
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
